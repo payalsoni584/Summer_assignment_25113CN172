@@ -1,0 +1,25 @@
+# include <stdio.h>
+int main()
+{int start,end,i,j,is prime;
+printf("enter the start of the range:");
+scanf("%d",&start);
+printf("enter the end of the range :");
+scanf("%d",&end);
+printf("prime numbers between %d and %d are:\n,start,end");
+for(i=start;i<=end;i++)
+{
+    if(i<2)
+    continue;
+    is prime=1;
+    for(j=2;j<=i/2;j++)
+{
+    if(i%j==0){
+        is prime=0;
+        break;
+
+    }
+}if(is prime)
+printf("%d\n",i);
+
+}return0;
+}
