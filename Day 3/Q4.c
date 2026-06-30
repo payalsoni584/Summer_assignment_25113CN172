@@ -10,6 +10,6 @@ int main()
 a=temp;
     }
 printf("GDC=%d\n",a);
-return0;
+return 0;
 }
 

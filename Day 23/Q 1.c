@@ -1,0 +1,25 @@
+# include <stdio.h>
+# include <string.h>
+int main(){
+    char str[100];
+    int i ,j ,len ,flag;
+    printf("enter a string:");
+    gets(str);
+    len = strlen(str);
+    for(i=0;i<len;i++){
+        flag =0;
+        for(j=0;j<len;j++){
+            if(i!=j&& str[i] == str[j]){
+                flag = 1;
+                break;
+              
+            }
+        }
+        if(flag == 0){
+            printf("first non repeating character :%c",str[i]);
+            return 0;
+        }
+    }
+    printf("no non-repeating character found ,");
+    return 0;
+}
